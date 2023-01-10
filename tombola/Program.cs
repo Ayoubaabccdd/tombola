@@ -10,7 +10,17 @@ namespace tombola
     {
         static void Main(string[] args)
         {
-         
+           //estrazioni dei numeri
+            Random rnd = new Random();
+            List<int> numbers = Enumerable.Range(1, 90).ToList();
+
+            while (numbers.Count > 0)
+            {
+                int a = rnd.Next(numbers.Count);
+                int numero = numbers[a];
+                Console.WriteLine("Il prossimo numero {0}", numero);
+                numbers.RemoveAt(a);
+            }
         }
     }
 }
