@@ -13,7 +13,7 @@ namespace tombola_per_natale
             Random rnd = new Random();
 
             //cartella 
-            Console.SetCursorPosition(0, 100);
+            Console.SetCursorPosition(0, 20);
             int numero = 0;
             int[,] MatricePrimaria = new int[9, 11];
             int[,] Cartella = new int[3, 9];
